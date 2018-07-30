@@ -19,9 +19,10 @@ class Penalty(models.Model):
         return self.title
 
 
-class Introduction(models.Model):
-    text = models.CharField(max_length=200)
+class Profile(models.Model):
+    Intro = models.CharField(max_length=200)
+    b_day = models.DateField()
     lang = models.CharField(max_length=20)
-    date = models.DateTimeField('date joined')
-    git_link = models.URLField(max_length=200)
+    date = models.DateField('date joined')
+    github_link = models.URLField(max_length=200)
 
